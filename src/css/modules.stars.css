@@ -1,0 +1,45 @@
+.star {
+  position: relative;
+  width: calc(var(--unit) * 12);
+  height: calc(var(--unit) * 12);
+  cursor: pointer;
+}
+.star__no-vote {
+  position: absolute;
+}
+.star__vote {
+  position: absolute;
+  width: calc(var(--unit) * 6);
+  overflow: hidden;
+  cursor: pointer;
+}
+.star__vote--half:hover {
+  transform: scale(1.2, 1.2);
+  transition: ease-in 150ms;
+}
+.star__vote--full {
+  left: calc(var(--unit) * 6);
+  transform: scaleX(-1);
+}
+.star__vote---full:hover {
+  transform: scaleX(-1) scale(1.2, 1.2);
+  transition: ease-in 150ms;
+}
+.star__input,
+.hidden {
+  display: none;
+}
+.success-vote {
+  padding: calc(var(--unit) * 8) calc(var(--unit) * 8);
+  position: fixed;
+  background: var(--color-success);
+  color: var(--color-primary-white);
+  bottom: 0;
+  right: 0;
+}
+@media only screen and (max-width: 450px) {
+  .modal__content--star-sign {
+    padding-right: calc(var(--unit) * 30);
+    max-width: calc(var(--unit) * 150);
+  }
+}

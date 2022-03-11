@@ -1,0 +1,48 @@
+.skel__item--title {
+  max-width: 600px;
+  margin: 16px 0;
+  height: 33px;
+  background: var(--color-disable);
+}
+.skel__item--img {
+  height: 696px;
+  margin: 21px 0;
+  background: var(--color-disable);
+}
+.skel__info--rating,
+.skel__info--language,
+.skel__info--popularity,
+.skel__info--companies,
+.skel__info--rating-star {
+  max-width: 400px;
+  margin-top: 16px;
+  height: 19px;
+  background: var(--color-disable);
+}
+.skel__info--rating-star {
+  margin-left: 200px;
+}
+.skel__info {
+  width: 47vw;
+  max-width: -webkit-fill-available;
+}
+@media only screen and (max-width: 600px) {
+  .skel__info {
+    width: 92vw;
+    max-width: -webkit-fill-available;
+  }
+}
+
+.skel__card--poster {
+  width: 250px;
+  position: relative;
+  height: 360px;
+}
+.skel__card--poster {
+  opacity: 0.8;
+  background: none;
+}
+
+.skel__card--poster {
+  background: var(--color-disable);
+}

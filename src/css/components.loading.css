@@ -1,0 +1,7 @@
+.spin {
+  width: 1200px;
+}
+
+.spin__load {
+  background: var(--color-primary-white);
+}

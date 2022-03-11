@@ -1,0 +1,14 @@
+@import "base.global.css";
+@import "variables.colors.css";
+@import "components.button.css";
+@import "components.skeleton.css";
+@import "components.loading.css";
+@import "components.header.css";
+@import "modules.movies.css";
+@import "modules.movies.modal.css";
+@import "modules.movie.details.css";
+@import "modules.moviesRating.css";
+@import "modules.stars.css";
+@import "variables.colors.css";
+@import "variables.typography.css";
+@import "page.404.css";

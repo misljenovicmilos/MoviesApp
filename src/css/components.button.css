@@ -1,0 +1,72 @@
+.btn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn--primary {
+  position: relative;
+  width: calc(var(--unit) * 40);
+  height: calc(var(--unit) * 40);
+  border-radius: 50%;
+}
+.btn--load {
+  border: 1px solid black;
+  background: white;
+  transition: ease-in 250ms;
+}
+.btn--load:hover {
+  background: black;
+  color: white;
+}
+.btn--shuffle {
+  border: 1px solid black;
+  background: var(--color-primary-white);
+}
+.btn--secondary {
+  padding: calc(var(--unit) * 9) calc(var(--unit) * 18);
+  border-radius: calc(var(--unit) * 5);
+  margin-top: calc(var(--unit) * 8);
+  background-color: var(--color-text);
+  color: var(--color-primary-white);
+  width: 100%;
+}
+.btn--secondary:hover {
+  background-color: var(--color-secondary);
+  transition: ease-in 250ms;
+}
+.btn--account {
+  background: var(--color-primary-white);
+  border: calc(var(--unit) * 0.5) solid black;
+  border-radius: calc(var(--unit) * 8);
+  padding: calc(var(--unit) * 4) calc(var(--unit) * 8);
+}
+.btn--account:hover {
+  background: var(--color-primary-darker);
+  border: calc(var(--unit) * 0.5) solid black;
+  border-radius: calc(var(--unit) * 8);
+  padding: calc(var(--unit) * 4) calc(var(--unit) * 8);
+  transition: ease-in 250ms;
+}
+.btn--logout {
+  background: var(--color-primary-white);
+  padding: calc(var(--unit) * 4) calc(var(--unit) * 8);
+  text-decoration: underline;
+}
+.btn--link {
+  border: 1px solid var(--color-text);
+  border-radius: 26px;
+  padding: 12px 26px;
+}
+
+.btn--homepage {
+  margin-top: 40px;
+  background: var(--color-text);
+  color: white;
+  transition: ease-in 300ms;
+}
+.btn--homepage:hover {
+  background: white;
+  border: 1px solid var(--color-text);
+  color: var(--color-text);
+}

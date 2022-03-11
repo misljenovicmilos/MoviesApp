@@ -1,0 +1,91 @@
+.header {
+  align-items: center;
+  padding: calc(var(--unit) * 16) 0;
+}
+.nav {
+  width: 100%;
+  justify-content: space-between;
+}
+.nav__item {
+  align-self: center;
+}
+.logo__item {
+  align-items: center;
+}
+.logo__item--title {
+  color: black;
+}
+
+.logo__link {
+  text-decoration: none;
+  align-items: center;
+}
+.drop-menu {
+  position: relative;
+}
+.bullet,
+.bullet--rotate {
+  position: relative;
+  padding: 0 calc(var(--unit) * 6);
+}
+.bullet:after {
+  content: url("../assets/images/arrow-down-sign-to-navigate.png");
+  position: absolute;
+  transform: scale(1) rotate(0deg);
+  transition: transform ease-in 300ms;
+  top: 0px;
+  width: calc(var(--unit) * 6);
+  height: calc(var(--unit) * 6);
+}
+.bullet--rotate:after {
+  content: url("../assets/images/arrow-down-sign-to-navigate.png");
+  position: absolute;
+  transform: scale(1) rotate(-180deg);
+  transition: transform ease-in 300ms;
+  top: calc(var(--unit) * 2);
+  width: calc(var(--unit) * 6);
+  height: calc(var(--unit) * 6);
+}
+
+.drop-menu__col {
+  position: absolute;
+  left: calc(var(--unit) * (-21.5));
+  top: calc(var(--unit) * 17.5);
+  border-radius: calc(var(--unit) * 6);
+  box-shadow: 0 calc(var(--unit) * 5 * 2) calc(var(--unit) * 15 * 2)
+    calc(var(--unit) * (-5 * 2)) var(--color-text);
+  transform: scale(1);
+  z-index: 16;
+}
+.none {
+  display: none;
+}
+
+.drop-menu__list {
+  list-style: none;
+  padding: calc(var(--unit) * 6) calc(var(--unit) * 6);
+  background: var(--color-primary-white);
+  width: calc(var(--unit) * 90);
+}
+.drop-menu__list {
+  border-bottom: calc(var(--unit) * 0.5) solid var(--color-secondary);
+}
+.drop-menu__list:first-child {
+  border-top-left-radius: calc(var(--unit) * 6);
+  border-top-right-radius: calc(var(--unit) * 6);
+}
+.drop-menu__list:last-child {
+  border-bottom-left-radius: calc(var(--unit) * 6);
+  border-bottom-right-radius: calc(var(--unit) * 6);
+  border-bottom: none;
+}
+.drop-menu__link {
+  text-decoration: underline;
+  color: black;
+  padding: calc(var(--unit) * 4) calc(var(--unit) * 8);
+}
+@media only screen and (max-width: 432px) {
+  .logo__item--title {
+    display: none;
+  }
+}

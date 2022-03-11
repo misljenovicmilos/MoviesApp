@@ -1,0 +1,18 @@
+.error-page {
+  height: 100vh;
+  padding: calc(var(--unit) * 8) calc(var(--unit) * 8);
+}
+.error-page-content {
+  padding: calc(var(--unit) * 8) calc(var(--unit) * 8);
+  max-width: calc(var(--unit) * 300);
+  border: 1px solid grey;
+  box-shadow: calc(var(--unit) * 5) calc(var(--unit) * 5)
+    calc(var(--unit) * 2.5) var(--color-disable);
+}
+.error-page-content h1 {
+  font-size: calc(var(--unit) * 32);
+}
+.error-page-content p {
+  padding-top: calc(var(--unit) * 20);
+  font-size: calc(var(--unit) * 13);
+}

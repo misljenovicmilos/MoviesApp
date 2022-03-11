@@ -1,0 +1,12 @@
+:root {
+  --color-primary-white: hsl(0, 100%, 100%, 1);
+  --color-primary-darker: hsl(0, 0%, 93%, 1);
+  --color-text: hsl(0, 0%, 0%, 1);
+  --color-secondary: hsl(345, 6%, 13%, 1);
+  --color-secondary-light: hsl(0, 0%, 0%, 0.4);
+  --color-error: hsl(0, 100%, 44%, 0.8);
+  --color-disable: hsl(0, 0%, 78%, 1);
+  --color-modal: hsl(240, 100%, 0%, 0.4);
+  --color-success: hsl(120, 100%, 50%);
+  --unit: 2px;
+}
